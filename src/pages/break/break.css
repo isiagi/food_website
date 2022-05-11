@@ -1,0 +1,10 @@
+.Break__container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.Break__wrapper {
+  width: 100%;
+  max-width: 1024px;
+}

@@ -1,0 +1,36 @@
+.foodDetail__container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.foodDetail__wrapper {
+    width: 100%;
+  max-width: 1024px;
+}
+
+.foodDetail__col__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.foodDetail__img {
+    
+    overflow: hidden;
+}
+
+.foodDetail__img > img {
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.foodDetail__button > button {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
