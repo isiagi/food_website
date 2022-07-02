@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     min-height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(220, 114, 114);
 }
 
 .nav__wrapper {

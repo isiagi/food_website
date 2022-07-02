@@ -1,12 +1,18 @@
 import Card from "../card/Card";
 import "./popular.css";
 
+import { sneaker } from "../../util/data/sneaker";
+
 const Popular = () => {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div style={{ width: "100%", maxWidth: "1024px" }}>
-        <h2 style={{ margin: "1rem 0" }}>Popular</h2>
-        <Card />
+        <h2 style={{ margin: "1rem 0" }}>Sneakers</h2>
+        <div className="card">
+          {sneaker.map(({ id, head, para, img }) => (
+            <Card id={id} price={para} name={head} img={img} />
+          ))}
+        </div>
       </div>
     </div>
   );
