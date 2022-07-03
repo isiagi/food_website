@@ -2,15 +2,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img4 from "../assets/images/shoes3.jpeg";
-
 import "./slider.css";
 
 import { shows } from "../../util/data/sneaker";
 
 const Slide = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

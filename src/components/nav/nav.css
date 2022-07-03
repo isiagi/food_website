@@ -1,20 +1,47 @@
 .nav__container {
-    display: flex;
-    justify-content: center;
-    min-height: 10vh;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    background-color: rgb(220, 114, 114);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(220, 114, 114);
 }
 
 .nav__wrapper {
-    width: 100%;
-    max-width: 1024px;
-  }
+  width: 100%;
+  max-width: 1024px;
+}
 
 .nav__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__modal {
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 3vh);
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.nav__modal > div {
+  width: 30px;
+}
+
+.nav__modal > div {
+  width: 90px;
+}
+
+.nav__modal > div img {
+  width: inherit;
+}
+
+.nav__abs {
+  position: relative;
 }

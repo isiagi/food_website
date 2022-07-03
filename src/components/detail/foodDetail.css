@@ -1,36 +1,112 @@
 .foodDetail__container {
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.detail__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .foodDetail__wrapper {
-    width: 100%;
+  width: 100%;
   max-width: 1024px;
+  margin-top: 12vh;
 }
 
 .foodDetail__col__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
 }
 
 .foodDetail__img {
-    
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .foodDetail__img > img {
-    display: block;
-    object-fit: cover;
-    border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 340px;
+  max-width: 100%;
+  width: 500px;
 }
 
 .foodDetail__button > button {
-    padding: 1rem;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    margin-top: 2rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.foodDetail__color {
+    width: 35px;
+    height: 35px;
+    background-color: red;
     cursor: pointer;
+}
+
+.foodDetail__color1 {
+  width: 35px;
+  height: 35px;
+  background-color: purple;
+  cursor: pointer;
+}
+
+.foodDetail__color2 {
+  width: 35px;
+  height: 35px;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.foodDetail__color__container {
+    display: flex;
+    gap: 10px;
+}
+
+.foodDetail__colorz > p {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.foodDetail__data > p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.foodDetail__summary {
+    margin-block: 1rem;
+}
+
+.foodDetail__summary ul {
+    line-height: 23px;
+    list-style: none;
+}
+
+select {
+  padding: .4rem;
+  font-size: 1em;
+}
+
+
+
+/* slider styles */
+
+.slide__img {
+  width: 250px;
+}
+
+.slide__img > img {
+  width: 100%;
+}
+
+.detail-slider-header {
+  padding-top: 2rem;
 }
