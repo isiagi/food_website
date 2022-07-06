@@ -44,8 +44,8 @@
 }
 
 .card__icon {
-  font-size: 1.6rem;
-  color: green;
+  font-size: 1.4rem;
+  color: #fff;
   cursor: pointer;
   margin-top: 50%;
 }
@@ -58,5 +58,5 @@
   background: black;
   padding: 1px 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
 }
