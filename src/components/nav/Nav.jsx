@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   const [open, setOpen] = useState(false);
 
-  const { cart, onIncrease, onDecrease,  onRemove} = useContext(AppContext);
+  const { cart, onIncrease, onDecrease, onRemove } = useContext(AppContext);
 
   const totalPrice = cart.reduce((a, b) => a + b.qty * b.para, 0);
 
@@ -20,20 +20,32 @@ const Nav = () => {
       <div className="nav__wrapper">
         <div className="nav__content">
           <div>
-            <h1><Link to='/'>SmartFit</Link></h1>
+            <h1>
+              <Link to="/">SmartFit</Link>
+            </h1>
           </div>
           <div className="nav__ul">
             <ul>
-              <li>Sneakers</li>
-              <li>Shoes</li>
-              <li>Dresses</li>
+              <li>
+                <Link to="/info/sneakers">Sneakers</Link>
+              </li>
+              <li>
+                <Link to="/info/shoes">Shoes</Link>
+              </li>
+              <li>
+                <Link to="/info/dresses">Dresses</Link>
+              </li>
             </ul>
           </div>
           <div>
             <div className="nav__abs">
               <p>
                 <FaCartArrowDown
-                  style={{ fontSize: "1.5rem", color: "white", cursor: "pointer" }}
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "white",
+                    cursor: "pointer",
+                  }}
                   onClick={() => setOpen(!open)}
                 />
                 {cart.length}
@@ -48,7 +60,14 @@ const Nav = () => {
                       <div>
                         <img src={item.img} alt="" />
                       </div>
-                      <div style={{ display: "flex", flex: 1, gap: "10px", alignItems: 'center' }}>
+                      <div
+                        style={{
+                          display: "flex",
+                          flex: 1,
+                          gap: "10px",
+                          alignItems: "center",
+                        }}
+                      >
                         <p>{item.head}</p>
                         <div>
                           <span
@@ -56,7 +75,7 @@ const Nav = () => {
                               background: "red",
                               padding: ".2rem .5rem",
                               margin: "0 10px",
-                              cursor: "pointer"
+                              cursor: "pointer",
                             }}
                             onClick={() => onIncrease(item)}
                           >
@@ -68,7 +87,7 @@ const Nav = () => {
                               background: "red",
                               padding: ".2rem .5rem",
                               margin: "0 10px",
-                              cursor: "pointer"
+                              cursor: "pointer",
                             }}
                             onClick={() => onDecrease(item)}
                           >
@@ -76,7 +95,12 @@ const Nav = () => {
                           </span>
                         </div>
                         <p>{item.para && item.para * item.qty}</p>
-                        <p onClick={() => onRemove(item)} style={{background: 'red'}}>X</p>
+                        <p
+                          onClick={() => onRemove(item)}
+                          style={{ background: "red" }}
+                        >
+                          X
+                        </p>
                       </div>
                     </div>
                   ))}

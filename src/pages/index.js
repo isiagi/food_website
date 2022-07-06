@@ -5,6 +5,7 @@ import Detail from "../components/detail/FoodDetail";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
 import { Context } from "../components/context/Context";
+import Cat from "../components/cat/Cat";
 
 function Index() {
   return (
@@ -15,6 +16,7 @@ function Index() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/:id" element={<Detail />} />
+            <Route path="/info/:info" element={<Cat />} />
           </Routes>
           <Footer />
         </Context>
