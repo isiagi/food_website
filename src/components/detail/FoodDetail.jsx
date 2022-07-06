@@ -25,7 +25,6 @@ const FoodDetail = () => {
     setItem(ite[0]);
   }, [id]);
 
-  console.log(`item`, item.img);
   return (
     <div className="foodDetail__container">
       <div className="foodDetail__wrapper">

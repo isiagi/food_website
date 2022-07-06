@@ -5,7 +5,7 @@ import "./card.css";
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Card = ({ id, price, img, name }) => {
+const Card = ({ id, price, img, name, qty }) => {
   const { addCart } = useContext(AppContext);
 
   return (
@@ -22,7 +22,7 @@ const Card = ({ id, price, img, name }) => {
             <p>Ugx {price}</p>
           </div>
           <div className="card__detail2">
-            <FaCartArrowDown className="card__icon" onClick={() => addCart({id, para:price, img, head:name})} />
+            <FaCartArrowDown className="card__icon" onClick={() => addCart({id, para:price, img, head:name, qty})} />
           </div>
         </div>
       </div>

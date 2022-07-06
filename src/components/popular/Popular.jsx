@@ -9,8 +9,8 @@ const Popular = () => {
       <div style={{ width: "100%", maxWidth: "1024px" }}>
         <h2 style={{ margin: "1rem 0" }}>Sneakers</h2>
         <div className="card">
-          {sneaker.map(({ id, head, para, img }) => (
-            <Card id={id} price={para} name={head} img={img} />
+          {sneaker.map(({ id, head, para, img, qty }) => (
+            <Card id={id} price={para} name={head} img={img} qty={qty} />
           ))}
         </div>
       </div>

@@ -47,8 +47,16 @@
   font-size: 1.6rem;
   color: green;
   cursor: pointer;
+  margin-top: 50%;
 }
 
 .card__icon:hover {
   color: yellowgreen;
+}
+
+.card__detail2 {
+  background: black;
+  padding: 1px 10px;
+  border: none;
+  border-radius: 10px;
 }

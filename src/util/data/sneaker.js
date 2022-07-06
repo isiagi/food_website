@@ -11,24 +11,28 @@ const sneaker = [
     img: img1,
     head: "Nike Air",
     para: "70000",
+    qty: 1
   },
   {
     id: 2,
     img: img2,
     head: "Dessert Rat",
     para: "60000",
+    qty: 1
   },
   {
     id: 3,
     img: img3,
     head: "Univert",
     para: "50000",
+    qty: 1
   },
   {
     id: 3,
     img: img4,
     head: "Air Force",
     para: "50000",
+    qty: 1
   },
 ];
 
@@ -38,18 +42,21 @@ const boots = [
     img: img5,
     head: "Classic Boots",
     para: "105000",
+    qty: 1
   },
   {
     id: 2,
     img: img6,
     head: "Fancy Boots",
     para: "100000",
+    qty: 1
   },
   {
     id: 3,
     img: img3,
     head: "Alta",
     para: "90000",
+    qty: 1
   },
 ];
 
@@ -59,18 +66,21 @@ const shows = [
     img: img1,
     head: "Air Sneak",
     para: "50000",
+    qty: 1
   },
   {
     id: 2,
     img: img6,
     head: "Classic Boot",
     para: "40000",
+    qty: 1
   },
   {
     id: 3,
     img: img2,
     head: "OutReact",
     para: "60000",
+    qty: 1
   },
 ];
 

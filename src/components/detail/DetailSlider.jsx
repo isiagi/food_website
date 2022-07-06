@@ -21,7 +21,7 @@ const DetailSlider = () => {
       <Slider
         {...settings}
         className="slider"
-        autoplay={false}
+        autoplay={true}
         focusOnSelect={true}
       >
         <div>

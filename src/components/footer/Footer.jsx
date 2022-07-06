@@ -6,25 +6,26 @@ const Footer = () => {
       <div className="footer__wrapper">
         <div className="footer__content">
           <div>
-          <h2>Happy Foods</h2> 
-          <p>@ 2022</p>
+          <h2>SmartFit</h2> 
+          <p>We are leading outfit website.</p>
+          <p>All Rights Reserved @ 2022</p>
           </div>
           <div>
             <h3>Quick Links</h3>
             <p>Home</p>
-            <p>Tray</p>
+            <p>Cart</p>
           </div>
           <div>
             <h3>Catergories</h3>
-            <p>Breakfast</p>
-            <p>Lunch</p>
-            <p>Dinner</p>
-            <p>Desert</p>
+            <p>Sneakers</p>
+            <p>Boots</p>
+            <p>Gentle ware</p>
+            <p>Ladies shoes</p>
           </div>
           <div>
             <h3>Contact</h3>
             <p>+256</p>
-            <p>@gmail.com</p>
+            <p>smartfit@gmail.com</p>
           </div>
         </div>
       </div>
