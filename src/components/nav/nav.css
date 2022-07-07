@@ -5,6 +5,8 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+  color: #fff;
+  background-color: rgb(220, 114, 114);
 }
 
 .nav__wrapper {
@@ -70,4 +72,21 @@
 
 .nav__ul > ul li {
   width: 100px;
+}
+
+.nav__abs > p {
+  position: relative;
+}
+
+.len {
+  color: green;
+  font-weight: 600;
+  /* background-color: green; */
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
 }

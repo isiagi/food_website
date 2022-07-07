@@ -48,7 +48,7 @@ const Nav = () => {
                   }}
                   onClick={() => setOpen(!open)}
                 />
-                {cart.length}
+                <span className="len">{cart.length}</span>
               </p>
               {open && (
                 <div className="nav__modal">
