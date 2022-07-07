@@ -17,8 +17,8 @@ const Slide = () => {
 
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
-      <div style={{ width: "95%", maxWidth: "1024px" }}>
-        <Slider {...settings} className="slider" autoplay={true}>
+      <div style={{ width: "1024px", maxWidth: "100%" }}>
+        <Slider {...settings} className="slider" autoplay={true} arrows={false}>
           {shows.map(({ id, head, para, img }) => (
             <div>
               <div

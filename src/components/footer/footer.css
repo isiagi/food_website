@@ -18,6 +18,7 @@
   .footer__content {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
   }
 
   .footer__content > div > h3 {
