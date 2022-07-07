@@ -16,7 +16,8 @@ const Cat = () => {
     >
       <div style={{ width: "100%", maxWidth: "1024px" }}>
         <div style={{ marginTop: "12vh" }}>
-          <h1>{info}</h1>
+          <p style={{ padding: "15px 0", color: "green", fontSize: "17px" }}>Category/{info}</p>
+          <h1 style={{ marginBottom: "20px",color: "rgb(220, 114, 114)" }}>{info}</h1>
 
           <div className="card">
             {info === "dresses"

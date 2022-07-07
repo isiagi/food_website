@@ -46,10 +46,10 @@
 }
 
 .foodDetail__color {
-    width: 35px;
-    height: 35px;
-    background-color: red;
-    cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  cursor: pointer;
 }
 
 .foodDetail__color1 {
@@ -67,35 +67,43 @@
 }
 
 .foodDetail__color__container {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .foodDetail__colorz > p {
-    font-weight: 500;
-    font-size: 1.3em;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: green;
+}
+
+.foodDetail__data h1 {
+  color: rgb(220, 114, 114);
 }
 
 .foodDetail__data > p {
-    font-size: 1.5em;
-    font-weight: 500;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: green;
+}
+
+.foodDetail__data ul > li {
+  color: green;
 }
 
 .foodDetail__summary {
-    margin-block: 1rem;
+  margin-block: 1rem;
 }
 
 .foodDetail__summary ul {
-    line-height: 23px;
-    list-style: none;
+  line-height: 23px;
+  list-style: none;
 }
 
 select {
-  padding: .4rem;
+  padding: 0.4rem;
   font-size: 1em;
 }
-
-
 
 /* slider styles */
 
