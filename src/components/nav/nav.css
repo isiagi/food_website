@@ -90,3 +90,9 @@
   height: fit-content;
   padding: 2px;
 }
+
+@media screen and (max-width: 991px) {
+  .nav__ul {
+    display: none;
+  }
+}
