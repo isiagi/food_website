@@ -1,7 +1,7 @@
 .footer__container {
     display: flex;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 45vh;
     align-items: center;
     line-height: 2rem;
     background-color: rgb(220, 114, 114);
@@ -25,9 +25,13 @@
     color: #fff;
   }
 
-  .footer__content > .footer__one {
-    color: green;
+.footer__content > div > h2 {
+    color: #fff;
   }
+
+  /* .footer__content > .footer__one {
+    color: green;
+  } */
 
   .footer__content > .footer__one h1 {
     color: #fff;
