@@ -12,7 +12,7 @@ const Cat = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [info]);
 
   console.log(info);
   return (
@@ -30,7 +30,9 @@ const Cat = () => {
                 <button>Ladies Shoes</button>
               </Link>
 
-              <Link to="/info/shoes/men"><button>Men Shoes</button></Link>
+              <Link to="/info/shoes/men">
+                <button>Men Shoes</button>
+              </Link>
             </div>
           )}
           <h1 style={{ marginBottom: "20px", color: "rgb(220, 114, 114)" }}>
