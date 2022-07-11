@@ -1,14 +1,13 @@
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./foodDetail.css";
-import { useContext } from "react";
 import { AppContext } from "../context/Context";
 
 import { FaCartArrowDown } from "react-icons/fa";
 import DetailSlider from "./DetailSlider";
 
 import { sneaker } from "../../util/data/sneaker";
-import { useEffect } from "react";
-import { useState } from "react";
+import "./foodDetail.css";
+
 
 const FoodDetail = () => {
   const [item, setItem] = useState({});
@@ -16,6 +15,10 @@ const FoodDetail = () => {
   const { addCart } = useContext(AppContext);
 
   const { id } = useParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const ite = sneaker.filter((item) => {
