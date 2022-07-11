@@ -30,13 +30,15 @@
   /* border: 1px solid red; */
   position: absolute;
   right: 0;
-  top: calc(100% + 3.8vh);
+  top: calc(100% + 0vh);
   display: flex;
   width: 400px;
+  max-width: 100%;
   flex-direction: column;
   gap: 5px;
   background-color: grey;
   padding: 1rem;
+  margin-right: 135px;
 }
 
 .nav__modal__div {
@@ -66,7 +68,7 @@
 .nav__ul > ul {
   display: flex;
   list-style: none;
-  font-size: 1.2em;
+  font-size: 1em;
   color: inherit;
 }
 
@@ -94,5 +96,9 @@
 @media screen and (max-width: 991px) {
   .nav__ul {
     display: none;
+  }
+
+  .nav__modal {
+    margin-right: 0;
   }
 }

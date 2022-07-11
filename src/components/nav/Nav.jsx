@@ -50,81 +50,111 @@ const Nav = () => {
                 />
                 <span className="len">{cart.length}</span>
               </p>
-              {open && (
-                <div className="nav__modal">
-                  <h1 style={{ textAlign: "center", color: "white" }}>
+            </div>
+            {open && (
+              <div className="nav__modal">
+                <div style={{ position: "relative" }}>
+                  <h1
+                    style={{
+                      textAlign: "center",
+                      color: "white",
+                      marginTop: "20px",
+                    }}
+                  >
                     Your Cart
                   </h1>
-                  {cart.map((item) => (
-                    <div className="nav__modal__div">
-                      <div>
-                        <img src={item.img} alt="" />
+                  <h1
+                    style={{
+                      position: "absolute",
+                      top: "0",
+                      right: "0",
+                      color: "red",
+                      fontSize: "20px",
+                      fontWeight: "bold",
+                      cursor: "pointer",
+                    }}
+                    onClick={() => setOpen(false)}
+                  >
+                    X
+                  </h1>
+                </div>
+                {cart.map((item) => (
+                  <div className="nav__modal__div">
+                    <div>
+                      <img src={item.img} alt="" />
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flex: 1,
+                        gap: "5px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <p style={{ width: "60px" }}>{item.head}</p>
+                      <div style={{ width: "80px" }}>
+                        <span
+                          style={{
+                            background: "red",
+                            padding: ".2rem .5rem",
+                            margin: "0 10px",
+                            cursor: "pointer",
+                          }}
+                          onClick={() => onIncrease(item)}
+                        >
+                          +
+                        </span>
+                        {item.qty}
+                        <span
+                          style={{
+                            background: "red",
+                            padding: ".2rem .5rem",
+                            margin: "0 10px",
+                            cursor: "pointer",
+                          }}
+                          onClick={() => onDecrease(item)}
+                        >
+                          -
+                        </span>
                       </div>
-                      <div
+                      <p style={{ width: "50px", marginLeft: "10px" }}>
+                        {item.para && item.para * item.qty}
+                      </p>
+                      <p
+                        onClick={() => onRemove(item)}
                         style={{
-                          display: "flex",
-                          flex: 1,
-                          gap: "10px",
-                          alignItems: "center",
+                          background: "green",
+                          padding: "5px",
+                          borderRadius: "5px",
+                          marginLeft: "10px",
+                          cursor: "pointer",
                         }}
                       >
-                        <p>{item.head}</p>
-                        <div>
-                          <span
-                            style={{
-                              background: "red",
-                              padding: ".2rem .5rem",
-                              margin: "0 10px",
-                              cursor: "pointer",
-                            }}
-                            onClick={() => onIncrease(item)}
-                          >
-                            +
-                          </span>
-                          {item.qty}
-                          <span
-                            style={{
-                              background: "red",
-                              padding: ".2rem .5rem",
-                              margin: "0 10px",
-                              cursor: "pointer",
-                            }}
-                            onClick={() => onDecrease(item)}
-                          >
-                            -
-                          </span>
-                        </div>
-                        <p>{item.para && item.para * item.qty}</p>
-                        <p
-                          onClick={() => onRemove(item)}
-                          style={{ background: "red" }}
-                        >
-                          X
-                        </p>
-                      </div>
+                        X
+                      </p>
                     </div>
-                  ))}
-                  <div style={{ display: "flex", gap: "10px" }}>
-                    <h2 style={{ color: "#fff" }}>Total Price: {totalPrice}</h2>
-                    <button
-                      style={{
-                        padding: "15px 20px",
-                        outline: "none",
-                        fontSize: "1em",
-                        border: "none",
-                        background: "green",
-                        color: "#fff",
-                        letterSpacing: "1px",
-                        borderRadius: "10px",
-                      }}
-                      onClick={() => setOpen(false)}
-                    >
-                      CheckOut
-                    </button>
                   </div>
+                ))}
+                <div style={{ display: "flex", gap: "10px" }}>
+                  <h2 style={{ color: "#fff" }}>Total Price: {totalPrice}</h2>
+                  <button
+                    style={{
+                      padding: "15px 20px",
+                      outline: "none",
+                      fontSize: "1em",
+                      border: "none",
+                      background: "green",
+                      color: "#fff",
+                      letterSpacing: "1px",
+                      borderRadius: "10px",
+                    }}
+                    onClick={() => setOpen(false)}
+                  >
+                    CheckOut
+                  </button>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
