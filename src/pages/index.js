@@ -7,6 +7,8 @@ import Footer from "../components/footer/Footer";
 import { Context } from "../components/context/Context";
 import Cat from "../components/cat/Cat";
 
+import Filter from "../components/filter/Filter";
+
 function Index() {
   return (
     <div>
@@ -16,7 +18,9 @@ function Index() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/:id" element={<Detail />} />
-            <Route path="/info/:info" element={<Cat />} />
+            <Route path="/info/:info" element={<Cat />}>
+              <Route path=":path" element={<Filter />} />
+            </Route>
           </Routes>
           <Footer />
         </Context>

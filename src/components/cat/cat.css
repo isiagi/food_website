@@ -1,0 +1,17 @@
+.cat__buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cat__buttons button {
+    padding: 1em;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(220, 114, 114);
+    color: #fff;
+    flex-wrap: wrap;
+}
