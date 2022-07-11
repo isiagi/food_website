@@ -30,19 +30,21 @@
   display: block;
   object-fit: cover;
   border-radius: 10px;
-  height: 340px;
+  height: 350px;
   max-width: 100%;
   width: 500px;
 }
 
 .foodDetail__button > button {
-  padding: 1rem;
+  padding: .7em;
   border: none;
   outline: none;
   border-radius: 5px;
   margin-top: 2rem;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  background-color: rgb(220, 114, 114);
+  color: #fff;
 }
 
 .foodDetail__color {
@@ -82,7 +84,7 @@
 }
 
 .foodDetail__data > p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 500;
   color: green;
 }
