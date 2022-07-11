@@ -4,12 +4,15 @@ import { FaCartArrowDown } from "react-icons/fa";
 
 import { useContext } from "react";
 import { AppContext } from "../context/Context";
+import { MdTableRows } from "react-icons/md";
+import { GiCancel } from "react-icons/gi";
 
 import "./nav.css";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const [side, setSide] = useState(false);
 
   const { cart, onIncrease, onDecrease, onRemove } = useContext(AppContext);
 
@@ -19,12 +22,21 @@ const Nav = () => {
     <div className="nav__container">
       <div className="nav__wrapper">
         <div className="nav__content">
+          {side ? (
+            <div className="iconContainer" onClick={() => setSide(false)}>
+              <GiCancel className="toggleIcon" />
+            </div>
+          ) : (
+            <div className="iconContainer" onClick={() => setSide(true)}>
+              <MdTableRows className="toggleIcon" />
+            </div>
+          )}
           <div>
             <h1>
               <Link to="/">SmartFit</Link>
             </h1>
           </div>
-          <div className="nav__ul">
+          <div className={`${"nav__ul"} ${side ? "active" : ""}`}>
             <ul>
               <li>
                 <Link to="/info/sneakers">Sneakers</Link>
