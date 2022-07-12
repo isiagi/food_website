@@ -75,9 +75,15 @@ export const Context = (props) => {
     }
   };
 
+  const onClear = () => {
+    if (window.confirm("Are you sure you want to clear the cart")) {
+      setCart([]);
+    }
+  };
+
   return (
     <AppContext.Provider
-      value={{ cart, onRemove, addCart, onIncrease, onDecrease }}
+      value={{ cart, onRemove, addCart, onIncrease, onDecrease, onClear }}
     >
       {props.children}
     </AppContext.Provider>

@@ -5,7 +5,7 @@
   position: fixed;
   width: 100%;
   z-index: 100;
-  color: #fff;
+  color: #FFE4E1;
   background-color: rgb(220, 114, 114);
 }
 
@@ -74,6 +74,7 @@
 
 .nav__ul ul li {
   width: 100px;
+  color: #FFE4E1;
 }
 
 .toggleIcon {
