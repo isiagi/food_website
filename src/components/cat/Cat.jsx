@@ -22,7 +22,7 @@ const Cat = () => {
       <div style={{ width: "100%", maxWidth: "1024px" }}>
         <div style={{ marginTop: "12vh" }}>
           <p style={{ padding: "15px 0", color: "green", fontSize: "17px" }}>
-            Home / {info}
+            <Link to="/">Home</Link> / {info}
           </p>
           {info === "shoes" && (
             <div className="cat__buttons">

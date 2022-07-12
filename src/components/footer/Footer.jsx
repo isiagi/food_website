@@ -14,26 +14,26 @@ const Footer = () => {
           <div>
             <h3>Quick Links</h3>
             <Link to="/">
-              <p style={{ color: "#A13E42" }}>Home</p>
+              <p style={{ color: "#FFE4E1" }}>Home</p>
             </Link>
-            <p>Cart</p>
+            {/* <p>Cart</p> */}
           </div>
           <div>
             <h3>Catergories</h3>
             <Link to="/info/sneakers">
-              <p style={{ color: "#A13E42" }}>Sneakers</p>
+              <p style={{ color: "#FFE4E1" }}>Sneakers</p>
             </Link>
             <Link to="/info/shoes">
-              <p style={{ color: "#A13E42" }}>Shoes</p>
+              <p style={{ color: "#FFE4E1" }}>Shoes</p>
             </Link>
             <Link to="/info/dresses">
-              <p style={{ color: "#A13E42" }}>Dresses</p>
+              <p style={{ color: "#FFE4E1" }}>Dresses</p>
             </Link>
           </div>
           <div>
             <h3>Contact</h3>
-            <p style={{ color: "#A13E42" }}>+256</p>
-            <p style={{ color: "#A13E42" }}>smartfit@gmail.com</p>
+            <p style={{ color: "#FFE4E1" }}>+256</p>
+            <p style={{ color: "#FFE4E1" }}>smartfit@gmail.com</p>
           </div>
         </div>
         <div>

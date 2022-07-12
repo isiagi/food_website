@@ -8,6 +8,7 @@ import DetailSlider from "./DetailSlider";
 import { sneaker } from "../../util/data/sneaker";
 import "./foodDetail.css";
 
+import { MdOutlineGppGood } from "react-icons/md";
 
 const FoodDetail = () => {
   const [item, setItem] = useState({});
@@ -39,16 +40,16 @@ const FoodDetail = () => {
             <h1>{item.head}</h1>
             <p>Ugx {item.para}</p>
             <div className="foodDetail__summary">
-              <h3>Summary Details</h3>
+              <h3 style={{ color: "#A13E42" }}>Summary Details</h3>
               <ul>
-                <li>Original Outfit</li>
-                <li>Nike</li>
-                <li>Fit for outdoor</li>
+                <li><MdOutlineGppGood /> Original Outfit</li>
+                <li><MdOutlineGppGood /> Nike</li>
+                <li><MdOutlineGppGood /> Fit for outdoor</li>
               </ul>
             </div>
             <div className="detail__wrapper">
               <div>
-                <h3>Size</h3>
+                <h3 style={{ color: "#A13E42" }}>Size</h3>
                 <div>
                   <select>
                     <option value="">1</option>
@@ -68,7 +69,7 @@ const FoodDetail = () => {
             </div>
             <div className="foodDetail__button">
               <button onClick={() => addCart(item)}>
-                Add to <FaCartArrowDown />
+                Add To <FaCartArrowDown />
               </button>
             </div>
           </div>

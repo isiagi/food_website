@@ -4,7 +4,7 @@
     min-height: 45vh;
     align-items: center;
     line-height: 2rem;
-    background-color: rgb(220, 114, 114);
+    background-color: #A13E42;
   }
   
   .footer__wrapper {
@@ -22,7 +22,7 @@
   }
 
   .footer__content > div > h3 {
-    color: #fff;
+    color: #FFE4E1;
   }
 
 .footer__content > div > h2 {
