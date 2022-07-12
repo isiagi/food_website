@@ -13,6 +13,7 @@ const Card = ({ id, price, img, name, qty }) => {
       <div className="card__Container" key={id}>
         <Link to={`/${id}`}>
           <div className="card__image">
+            <div className="card__img__overlay" />
             <img src={img} alt="hey" width="100%" />
           </div>
         </Link>
@@ -22,7 +23,10 @@ const Card = ({ id, price, img, name, qty }) => {
             <p>Ugx {price}</p>
           </div>
           <div className="card__detail2">
-            <FaCartArrowDown className="card__icon" onClick={() => addCart({id, para:price, img, head:name, qty})} />
+            <FaCartArrowDown
+              className="card__icon"
+              onClick={() => addCart({ id, para: price, img, head: name, qty })}
+            />
           </div>
         </div>
       </div>
