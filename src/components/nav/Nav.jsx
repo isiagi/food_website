@@ -14,7 +14,8 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
   const [side, setSide] = useState(false);
 
-  const { cart, onIncrease, onDecrease, onRemove, onClear } = useContext(AppContext);
+  const { cart, onIncrease, onDecrease, onRemove, onClear } =
+    useContext(AppContext);
 
   const totalPrice = cart.reduce((a, b) => a + b.qty * b.para, 0);
 
@@ -50,7 +51,7 @@ const Nav = () => {
             </ul>
           </div>
           <div>
-            <div className="nav__abs">
+            <div className="nav__abs" onClick={() => setOpen(!open)}>
               <p>
                 <FaCartArrowDown
                   style={{
@@ -165,8 +166,10 @@ const Nav = () => {
                     CheckOut
                   </button>
                 </div>
-                <div >
-                  <p style={{cursor: "pointer"}} onClick={() => onClear()}>Clear Cart</p>
+                <div>
+                  <p style={{ cursor: "pointer" }} onClick={() => onClear()}>
+                    Clear Cart
+                  </p>
                 </div>
               </div>
             )}

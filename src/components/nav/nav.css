@@ -63,6 +63,7 @@
 
 .nav__abs {
   position: relative;
+  cursor: pointer;
 }
 
 .nav__ul ul {
