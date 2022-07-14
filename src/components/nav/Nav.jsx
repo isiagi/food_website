@@ -81,7 +81,7 @@ const Nav = () => {
                       position: "absolute",
                       top: "0",
                       right: "0",
-                      color: "red",
+                      color: "#fff",
                       fontSize: "20px",
                       fontWeight: "bold",
                       cursor: "pointer",
@@ -108,10 +108,11 @@ const Nav = () => {
                       <div style={{ width: "80px" }}>
                         <span
                           style={{
-                            background: "red",
+                            background: "#FFE4E1",
                             padding: ".2rem .5rem",
                             margin: "0 10px",
                             cursor: "pointer",
+                            color: "#005B99"
                           }}
                           onClick={() => onIncrease(item)}
                         >
@@ -120,10 +121,11 @@ const Nav = () => {
                         {item.qty}
                         <span
                           style={{
-                            background: "red",
+                            background: "#FFE4E1",
                             padding: ".2rem .5rem",
                             margin: "0 10px",
                             cursor: "pointer",
+                            color: "#005B99"
                           }}
                           onClick={() => onDecrease(item)}
                         >
@@ -136,8 +138,8 @@ const Nav = () => {
                       <p
                         onClick={() => onRemove(item)}
                         style={{
-                          background: "green",
-                          padding: "5px",
+                          background: "#005B99",
+                          padding: "5px 10px",
                           borderRadius: "5px",
                           marginLeft: "10px",
                           cursor: "pointer",
