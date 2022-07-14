@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h3>Contact</h3>
             <p style={{ color: "#FFE4E1" }}>+256</p>
-            <p style={{ color: "#FFE4E1" }}>smartfit@gmail.com</p>
+            {/* <p style={{ color: "#FFE4E1" }}>smartfit@gmail.com</p> */}
           </div>
         </div>
         <div>
