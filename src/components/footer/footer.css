@@ -1,7 +1,7 @@
 .footer__container {
     display: flex;
     justify-content: center;
-    min-height: 45vh;
+    min-height: 55vh;
     align-items: center;
     line-height: 2rem;
     background-color: #A13E42;
@@ -17,12 +17,15 @@
 
   .footer__content {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
+      line-height: 40px;
   }
 
   .footer__content > div > h3 {
-    color: #FFE4E1;
+    /* color: #FFE4E1; */
+    color: rgb(220, 114, 114);
+    font-size: 1.4em;
   }
 
 .footer__content > div > h2 {
@@ -35,4 +38,9 @@
 
   .footer__content > .footer__one h1 {
     color: #fff;
+  }
+
+  .footer__icon {
+    font-size: 1.3em;
+    color: #005B99
   }
