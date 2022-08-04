@@ -60,7 +60,7 @@ const Nav = () => {
                     fontSize: "1.5rem",
                     // color: "white",
                     cursor: "pointer",
-                    color: "#005B99"
+                    color: "#fff"
                   }}
                   onClick={() => setOpen(!open)}
                 />
